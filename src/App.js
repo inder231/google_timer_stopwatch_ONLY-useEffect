@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
+import StopWatch from "./components/StopWatch/StopWatch";
+import Timer from "./components/Timer/Timer";
 
 function App() {
+  const [state, setState] = useState(true);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="btndiv" >
+    <button className="btn" onClick={() => setState(true)}>StopWatch</button>
+    <button className="btn" onClick={() => setState(false)}>Timer</button>
+    </div>
+      <div>{state ? <StopWatch /> : <Timer />}</div>
     </div>
   );
 }

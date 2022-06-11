@@ -1,0 +1,28 @@
+.timerDiv{
+    border:2px solid grey;
+    margin:auto;
+    width: 500px;
+    padding: 20px;
+    margin-top: 20px;
+}
+.timerDiv input{
+width: 250px;
+border-top:none;
+border-left: none;
+border-right: none;
+border-bottom: 2px solid grey;
+}
+.timerDiv button{
+    border: none;
+    background-color: black;
+    padding:5px 10px;
+    font-weight: bold;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.timerDiv button:hover{
+    background-color: white;
+    color: black;
+}

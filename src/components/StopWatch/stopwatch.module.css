@@ -1,0 +1,30 @@
+.stopDiv{
+    border:2px solid grey;
+    margin:auto;
+    width: 500px;
+    padding: 20px;
+    margin-top: 20px;
+}
+h1{
+    font-size: 55px;
+}
+.btnDiv{
+    display: flex;
+    justify-content: space-around;
+    width: 200px;
+    margin: auto;
+}
+.btnDiv button{
+    border: none;
+    background-color: black;
+    padding:5px 10px;
+    font-weight: bold;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.btnDiv button:hover{
+    background-color: white;
+    color: black;
+}
